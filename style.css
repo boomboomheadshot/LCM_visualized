@@ -1,0 +1,319 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #031321;
+    justify-content: center;
+    align-items: center;
+    font-family: consolas;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    left: 320px;
+    top: 30px;
+    padding: 10px 20px;
+    color: #2196f3;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 45px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#start {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.1s;
+}
+
+#red_1 {
+    position: absolute;
+    text-align: center;
+    display: none;
+    left: 600px;
+    top: 220px;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    color: papayawhip;
+    font-family: consolas;
+    text-decoration-color: #255784;
+    background-color: rgb(19, 18, 18);
+    font-weight: 200;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px red, 0 0 21px red, 0 0 35px red;
+    text-shadow: 0 0 4px red, 0 0 12px red, 0 0 20px red;
+    transition-delay: 1.5s;
+}
+
+#red_2 {
+    position: absolute;
+    text-align: center;
+    display: none;
+    left: 720px;
+    top: 220px;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    color: papayawhip;
+    font-family: consolas;
+    text-decoration-color: #255784;
+    background-color: rgb(19, 18, 18);
+    font-weight: 200;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px red, 0 0 21px red, 0 0 35px red;
+    text-shadow: 0 0 4px red, 0 0 12px red, 0 0 20px red;
+    transition-delay: 1.5s;
+}
+
+#red_3 {
+    position: absolute;
+    text-align: center;
+    display: none;
+    left: 840px;
+    top: 220px;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    color: papayawhip;
+    font-family: consolas;
+    text-decoration-color: #255784;
+    background-color: rgb(19, 18, 18);
+    font-weight: 200;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px red, 0 0 21px red, 0 0 35px red;
+    text-shadow: 0 0 4px red, 0 0 12px red, 0 0 20px red;
+    transition-delay: 1.5s;
+}
+
+#green_1 {
+    position: absolute;
+    text-align: center;
+    display: none;
+    left: 140px;
+    top: 220px;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    color: papayawhip;
+    font-family: consolas;
+    text-decoration-color: #255784;
+    background-color: rgb(19, 18, 18);
+    font-weight: 200;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px green, 0 0 21px green, 0 0 35px green;
+    text-shadow: 0 0 4px green, 0 0 12px green, 0 0 20px green;
+    transition-delay: 1.5s;
+}
+
+#green_2 {
+    position: absolute;
+    text-align: center;
+    display: none;
+    left: 260px;
+    top: 220px;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    color: papayawhip;
+    font-family: consolas;
+    text-decoration-color: #255784;
+    background-color: rgb(19, 18, 18);
+    font-weight: 200;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px green, 0 0 21px green, 0 0 35px green;
+    text-shadow: 0 0 4px green, 0 0 12px green, 0 0 20px green;
+    transition-delay: 1.5s;
+}
+
+#animProgress {
+    left: 350 px;
+    opacity: 0.5;
+    color: #255784;
+    text-transform: lowercase;
+    background: #2196f3;
+    transition-delay: 1s;
+    cursor: pointer;
+}
+
+#track {
+    fill: #9D00FF;
+    stroke-width: "5000";
+}
+
+.dot-1 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    left: 50px;
+    top: 225px;
+}
+
+.dot-2 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    left: 43px;
+    top: 155px;
+}
+
+.btnAnimation {
+    animation: animate 12s ease-in forwards;
+}
+
+.timerAnimation {
+    animation: animateTimer 1s ease-in forwards;
+}
+
+@keyframes animate {
+    0% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+    10% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    20% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+    30% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    40% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 3px #2196f3, 0 0 15px #2196f3, 0 0 30px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+    50% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    60% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 2px #2196f3, 0 0 12px #2196f3, 0 0 20px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+    70% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    80% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+    90% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    100% {
+        text-transform: capitalize;
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 1px #2196f3, 0 0 7px #2196f3, 0 0 10px #2196f3;
+        transition-delay: 0.1s;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+}
+
+@keyframes animateTimer {
+    0% {
+        box-shadow: 0 0 1px #2196f3, 0 0 3px #2196f3, 0 0 5px #2196f3;
+        opacity: 0.7;
+    }
+    30% {
+        box-shadow: 0 0 2px #2196f3, 0 0 6px #2196f3, 0 0 10px #2196f3;
+        opacity: 0.9;
+    }
+    60% {
+        box-shadow: 0 0 3px #2196f3, 0 0 9px #2196f3, 0 0 15px #2196f3;
+        opacity: 1.0;
+    }
+    90% {
+        box-shadow: 0 0 4px #2196f3, 0 0 12px #2196f3, 0 0 20px #2196f3;
+        opacity: 1.0;
+    }
+    100% {
+        box-shadow: 0 0 5px #2196f3, 0 0 15px #2196f3, 0 0 25px #2196f3;
+        opacity: 1.0;
+    }
+}
